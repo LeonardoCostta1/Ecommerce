@@ -1,0 +1,5 @@
+.home_wrapper { min-height: 100vh; padding-bottom: 50px; width: 100%; }
+.home_wrapper .home_container { display: flex; justify-content: center; align-items: flex-start; width: calc(100% - 100px); margin-left: 50px; margin-right: 50px; margin: 0 auto; min-height: 100vh; padding-bottom: 50px; background: #080808; }
+.home_wrapper .home_container .main { width: 100%; min-height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */

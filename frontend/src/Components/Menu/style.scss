@@ -1,0 +1,51 @@
+.menu_wrapper{
+    height: 70px;
+    width:calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px 0px 50px;
+    margin: 0 auto;
+    
+    .logo_wrapper{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        img{
+            width: 90px;
+        }
+    }
+    .nav_wrapper{
+        width: calc(100% - 600px);
+    }
+    .cart_icons_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 300px;
+
+        a{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+        .shop{
+
+            width: 80px;
+            font-size: 10px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        i{
+            margin-right: 5px;
+        }
+        
+    }
+}

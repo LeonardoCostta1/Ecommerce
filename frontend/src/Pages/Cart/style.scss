@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+.cart_wrapper{
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 50px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    .cart_container{
+
+        width: calc(100% - 100px);
+        margin:0 auto;
+        .title_wrapper{
+
+        }
+
+        .bag_wrapper{
+            min-height: 100px;
+            height: auto;
+            width: 100%;
+            background: #080808;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+  
+            .bag_container{
+                width: calc(100% - 350px);
+                min-height:600px;height: auto;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+
+                .product{
+                    height: 80px;
+                    width: 100%;
+                    border-bottom: 1px solid #222;
+                    padding:0px 20px 0px 20px;
+                    display: flex;
+                    align-items:center;
+                    justify-content: flex-start;
+                    transition:.3s;
+                    .img{
+                        height: 60px;
+                        width: 60px;
+                        margin-right: 10px;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .title{
+                    width: 400px;
+
+                        font-size: 12px;
+                        margin-right: 10px;
+
+                    }
+                    .cont_wrapper{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        button{
+                            height: 25px;
+                            width: 25px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #222;
+                            border: none;
+                            color: #fff;
+                             height:25px;
+                            width: 25px;
+                            font-weight: 200;
+                            font-size: 10px;
+                            cursor: pointer;
+                        }
+                        .qtd{
+                            border: 1px solid #fff;
+                            background: none;
+                            color: #fff;
+                             height: 24px;
+                            width: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 12px;
+                            margin: 0px 5px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    button{
+                        height: 25px;
+                        width: 100px;
+                        color: #fff;
+                        border: none;
+                        background: none;
+                        font-size: 30px;
+                        font-weight: 200;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        border: 1px solid #fff;
+                        margin:0px 10px
+                    }
+                    .codProduto{
+                        width: 100px;
+                        font-size: 9px;
+                        font-weight: 200;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span{
+                            color:#999;
+                        }
+                    }
+                }
+            }
+            .payment_container{
+                width: 350px;
+                height: 650px;
+                background:#222;
+            }
+        }
+    }
+
+}
