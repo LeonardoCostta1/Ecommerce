@@ -1,7 +1,9 @@
 
 const INITIAL_STATE={
    products:[],
-   loading:{loading:false}
+   detail:[],
+   loading:{loading:false},
+   open:{open:false}
 }
 
 export default function cart(state = INITIAL_STATE,action){
@@ -11,6 +13,12 @@ export default function cart(state = INITIAL_STATE,action){
 
         case 'REMOVE_PRODUCT':
             return {products: state.products.filter(products => products.id_produtos !== action.payload)}
+
+        case 'ADD_PRODUCT_DETAIL':
+            return{...state, detail:[action.payload]}
+
+        case 'OPEN':
+            return{...state, open:[action.payload]}
         default:
             return state;
     }

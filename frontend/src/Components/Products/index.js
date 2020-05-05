@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react';
 import {useDispatch} from 'react-redux'
 import './style.css';
 import api from '../../Services/api'
+
+import {Link} from 'react-router-dom'
 export default function Products() {
     const [response,setResponse] = useState([]);
     const dispacth =  useDispatch();
@@ -13,6 +15,9 @@ export default function Products() {
         })
     },[])
     function addProduct(product){
+        dispacth({type:"ADD_PRODUCT_DETAIL",payload:product})
+    }
+    function addCart(product){
         dispacth({type:"ADD_PRODUCT",payload:product})
     }
   return (
@@ -31,18 +36,36 @@ export default function Products() {
 
             {response.map((item)=>{
                 return(
-                    <div key={item.id_produtos} className='product_box_item'onClick={()=>addProduct(item)}>
-                    <i className="far fa-heart"></i>
-                    {/* <div className="new_type">novo</div> */}
-                    <div className="img">
-                    <img src={item.photo} alt="product"/>
-                    </div>
-                    <div className="description_product">
-                        <div className="category">{item.modelo}</div>
-                        <div className="name_product">{item.nome}</div>
-                        <div className="price">R${item.preco}<span>R${item.preco_antigo}</span></div>
-                    </div>
-                </div>
+                    
+                        <div key={item.id_produtos} className='product_box_item'onClick={()=>addProduct(item)}>
+                           
+                        
+                            <i className="far fa-heart"></i>
+                            
+                            <Link to='/detail'>
+                            <>
+                                <div className="img">
+                                <img src={item.photo} alt="product"/>
+                                </div>
+                                </>
+                            </Link>
+                                <div className="description_product">
+                                    <div className="category">{item.modelo}</div>
+                                    <div className="name_product">{item.nome}</div>
+
+                                    <div className="buttons_wrapper">
+                                        <Link to='/detail'>
+                                        <div className="addCart">VIEW PRODUCT</div>
+                                        </Link>
+                                        <div className="addCart" onClick={()=>addCart(item)}>ADD CART</div>
+                                    </div>
+
+                                    <div className="price">R${item.preco}</div>
+                                </div>
+                      
+                        </div>
+
+               
                 )
             })}
 

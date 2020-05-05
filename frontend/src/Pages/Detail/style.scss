@@ -1,0 +1,157 @@
+.detail_wrapper{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    text-transform: uppercase;
+    .detail_conatiner{
+        width: calc(100% - 100px);
+        margin: 0px 50px;
+    
+
+        .title_wrapper{
+            text-transform: uppercase;
+        }
+
+        .product_detail_wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #080808;
+            padding-top: 50px;
+            
+            .det{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .img_detail_wrapper{
+                    max-width:  600px;
+                    width: auto;
+                    min-height: 600px;
+                    height: auto;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-right: 50px;
+
+                    .sidebar_images{
+                        min-height: 500px;
+                        height: auto;
+                        width: 150px;
+                        // border: 1px solid #fff;
+                        margin-right: 10px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-direction:column;
+                        .box_img_sidebar{
+                            height: 159px;
+                            width: 150px;
+                            margin: 0px 0px 10px 0px;
+                            cursor: pointer;
+                            img{
+                                height:100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                    }
+                    .img_box{
+                        height: 500px;
+                        width: 500px;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+            }
+            .description_detail_wrapper{
+
+                width: 400px;
+                min-height: 600px;
+                height: auto;
+                .name_product{
+
+                    height: 130px;
+                    width: 100%;
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                .category{
+                    font-size: 12px;
+                    font-weight: 200;
+
+                    width: 100%;      
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                }
+                .price{
+                    height: 80px;
+                    width: 100%;
+                    font-size: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    span{
+                        text-decoration: line-through;
+                        font-size: 14px;
+                        color: #999;
+                        margin-left: 10px;
+                    }
+                }
+                .size{
+                    height: 30px;
+                    width: 99.5%;
+                    border: 1px solid #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-transform: uppercase;
+
+                }
+                button{
+
+                    width: 100%;
+                    height: 40px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    transition: .3s;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgb(218, 218, 218);
+                    }
+                }
+                .description{
+                    min-height: 150px;
+                    height: auto;
+                    width: 100%;
+                    text-transform: uppercase;
+                }
+                .color{
+                    text-transform: uppercase;
+                    span{
+                        color: #999;
+                    }
+                }
+                .cod{
+                    text-transform: uppercase;
+                    span{
+                        color: #999;
+                    }
+                }
+            }
+
+        }
+    }
+}

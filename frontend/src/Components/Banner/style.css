@@ -1,0 +1,44 @@
+.banner_wrapper{
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+.banner_wrapper .linaer{
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.507);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.promo_text{
+  width: 300px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner_wrapper .linaer img{
+width: 250px;
+height: 45px;
+margin: 0 auto;
+object-fit: cover;
+margin:0 auto;
+margin-bottom: 10px;
+}
+
+.banner_wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
