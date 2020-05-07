@@ -13,7 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 * SASS   
 * Axios   
 
-**Backend:**    
+**Backend**    
 * Node js    
 * Express    
 * Body Parser    
