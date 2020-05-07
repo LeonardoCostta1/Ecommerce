@@ -54,4 +54,4 @@ _______________________________________________________
 
 ### **DATABASE MySQL**
 Faça a importação do banco de dados mysql
-+ arquivo disponibilizado na  raiz do projeto 
++ arquivo disponibilizado na  raiz do projeto - **ecommerce_produtos.sql**
